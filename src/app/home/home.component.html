@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+        <h1 style="text-align: center;">Liste des fichiers</h1>
+        <div class="list-group">
+            <button class="list-group-item" *ngFor="let file of tab_files.mesfichiers ; let i = index"
+                [routerLink]="['view-file' , file]">
+
+                <div class="list-group-item-heading">
+                    <div style="display: inline-block"><img src="../../assets/telechargement.jpeg"></div>
+                    <div style="display: inline-block;margin-left: 5%;">
+                        <h3 style="margin-top: 0px;">{{ file }}</h3>
+                    </div>
+                    <button class="btn btn-default pull-right" [routerLink]="['view-file' , file]" > <span class="glyphicon glyphicon-eye-open"></span></button>
+                </div>
+            </button>
+
+            <div style="margin-top: 20%;" *ngIf="veriffile" class="list-group-item-heading">
+                <h2 style="text-align: center;">Pas encore de fichiers!!</h2>
+            </div>
+        </div>
+    </div>

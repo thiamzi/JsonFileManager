@@ -1,0 +1,101 @@
+{
+  "urldebasesiteweb": "wvx",
+  "imagesBaseSite": "SVDW",
+  "description": "charger de gerer le personnel",
+  "thematiqueSite": " xxw",
+  "sousCategorieSite": "gvc",
+  "contatcSite": "dfgdfcd",
+  "dateDernierTourSpider": "2020-04-03",
+  "dateDernierTourCrawler": "2020-04-17",
+  "javascript": "true",
+  "contenuArticle": [
+    {
+      "noeudpere": "wdvx",
+      "proprietenoeudpere": "xftgc",
+      "valeurproprietenoeudpere": "grsvdxthg",
+      "noeudfils": "hsdrb",
+      "contenurtxt": "jdnfb",
+      "methode": "extraireContenuArticle"
+    }
+  ],
+  "audiosArticle": [
+    {
+      "metaparam": "fdgfdfd",
+      "methode": "extraireAudiosArticle"
+    },
+    {
+      "metaparam": "fxfddc",
+      "methode": "extraireAudiosArticle"
+    }
+  ],
+  "videosArticle": [
+    {
+      "noeudpere": ",ffcgnv",
+      "proprietenoeudpere": "gwsvd",
+      "valeurproprietenoeudpere": "grsvdxthg",
+      "noeudfils": "FScww",
+      "attribVideo": "fxfddc",
+      "methode": "extraireVideosArticle"
+    },
+    {
+      "attribVideo": "dffdf",
+      "metaparam": "rrggrd",
+      "methode": "extraireVideosArticleGeneral"
+    }
+  ],
+  "imagesArticle": [
+    {
+      "metaparam": "fxfddc",
+      "attribImg": "fgfgf",
+      "methode": "extrairesImagesArticleGeneral"
+    },
+    {
+      "metaparam": "fxfddc",
+      "attribImg": "fgfgf",
+      "methode": "extrairesImagesArticleGeneral"
+    }
+  ],
+  "auteurArticle": [],
+  "thematiqueArticle": [],
+  "sousCategorieArticle": [],
+  "titreArticle": [],
+  "resumeArticle": [
+    {
+      "noeudpere": "nfgcv",
+      "proprietenoeudpere": "xftgc",
+      "valeurproprietenoeudpere": "grsvdxthg",
+      "noeudfils": "hsdrb",
+      "niveau": 41,
+      "niveauAttribut": "2020-04-11",
+      "methode": "extraireValeurAttributNoeud"
+    }
+  ],
+  "datePublicationArticle": [],
+  "dateMiseJourArticle": [],
+  "nombreLikesArticle": [],
+  "nombreLecturesArticle": [],
+  "nombreCommentairesArticle": [],
+  "nombrePartagesArticle": [],
+  "commentairesArticle": [
+    {
+      "noeudpere": "nfgcv",
+      "proprietenoeudpere": "xftgc",
+      "valeurproprietenoeudpere": "SFVwdx",
+      "noeudfils": "hsdrb",
+      "methode": "extraireCommentairesArticle"
+    }
+  ],
+  "motsClesArticle": [
+    {
+      "tagProperty": "fdfvvxw",
+      "methode": "extraireMotsclesParTagsMetas"
+    },
+    {
+      "noeudpere": "nfgcv",
+      "proprietenoeudpere": "xftgc",
+      "valeurproprietenoeudpere": "grsvdxthg",
+      "noeudfils": "hsdrb",
+      "methode": "extraireMotsclesArticle"
+    }
+  ]
+}

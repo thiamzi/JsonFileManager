@@ -1,0 +1,50 @@
+#di{
+  background: rgb(230, 29, 63);
+}
+#sen p{
+  margin-top: 10px;
+  color:white;
+  font-size: 30px;
+  font-weight: bold;
+}
+#sen span img{
+  height: 60px;
+  width: 60px;
+  border-radius: 29px;
+}
+#men{
+  font-weight: bold;
+  color: white;
+  font-size: 18px;
+  margin: 15px;
+}
+#men :hover{
+  color:white;
+  background: rgb(192, 34, 34);
+  border-radius: 7px;
+}
+#btn :hover{
+  background:darkred;
+}
+    
+#ajout li a{
+  font-size: 18px;
+}
+img{
+  height: 100px;
+  width: 100px;
+}
+#head ul li:hover{
+  color: white;
+  background:rgb(233, 37, 37);;
+}
+#head ul li{
+  color: rgb(71, 70, 70);
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 7px;
+}
+  
+#sen{
+  cursor: pointer;
+}
