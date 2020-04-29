@@ -15,15 +15,12 @@ import Swal from 'sweetalert2';
 export class EditFileComponent implements OnInit {
 
   form: FormGroup;
-  form2: FormGroup;
 
   tab_files = { mesfichiers: [] }
 
-  exist: boolean = false;
-  verif: boolean = false;
-
   listeMethodes = []
   listeAttributs = []
+  exist = false;
 
   jsonfile = null
   fileName = null;
@@ -31,16 +28,21 @@ export class EditFileComponent implements OnInit {
 
   ngOnInit() {
     this.fileName = this.rout.snapshot.params['nom'];
+    this.file.GetJsonFiles().subscribe(res => {
+      this.tab_files = res;
+    },
+      err => { console.log('erreur'); }
+    );
     this.initform()
 
     this.file.GetOneJsonFile(this.fileName).subscribe(res => {
       this.jsonfile = res;
       this.form.patchValue(res);
       this.remplirform()
+
     },
       err => { err => { this.route.navigate(['home/not-found']) } }
     );
-    this.form2 = this.formbuild.group({ nom: ['', [Validators.required, Validators.minLength(5)]] })
     this.listeAttributs = this.build.listeattribut()
     this.listeMethodes = this.build.listesMehodes()
   }
@@ -59,8 +61,6 @@ export class EditFileComponent implements OnInit {
       javascript: ['true'],
 
       contenuArticle: this.formbuild.array([]),
-
-      audiosArticle: this.formbuild.array([]),
 
       videosArticle: this.formbuild.array([]),
 
@@ -112,13 +112,21 @@ export class EditFileComponent implements OnInit {
       buttonsStyling: true
     });
 
-    this.file.EditJSonFile(this.form.value, this.fileName).subscribe(res => {
+    for (let i = 0; i < this.tab_files.mesfichiers.length; i++) {
+      if (this.tab_files.mesfichiers[i] === this.file.valider(this.form.get('urldebasesiteweb').value)) {
+        if(this.tab_files.mesfichiers[i]!==this.fileName){
+          this.exist = true
+          return
+        }
+      }
+    }
+    this.file.EditJSonFile(this.form.value, this.fileName, this.file.valider(this.form.get('urldebasesiteweb').value)).subscribe(res => {
       swalWithBootstrapButtons.fire(
         "modifié!",
         "Le fichier a été modifié.",
         "success"
       );
-      this.route.navigate(['home/view-file', this.fileName])
+      this.route.navigate(['home/view-file', this.file.valider(this.form.get('urldebasesiteweb').value)])
     },
       err => {
         console.log('erreur');
@@ -141,13 +149,6 @@ export class EditFileComponent implements OnInit {
         this.build.createform(this.jsonfile.contenuArticle[i].methode, 'contenuArticle', this.form)
       }
       this.getform('contenuArticle').setValue(this.jsonfile.contenuArticle);
-    }
-
-    if (this.jsonfile.audiosArticle.length !== 0) {
-      for (let i = 0; i < this.jsonfile.audiosArticle.length; i++) {
-        this.build.createform(this.jsonfile.audiosArticle[i].methode, 'audiosArticle', this.form)
-      }
-      this.getform('audiosArticle').setValue(this.jsonfile.audiosArticle);
     }
 
     if (this.jsonfile.imagesArticle.length !== 0) {

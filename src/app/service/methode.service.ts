@@ -103,13 +103,6 @@ export class MethodeService {
       })
     }
 
-    if (methode === 'extraireAudiosArticle') {
-      return this.formbuild.group({
-        metaparam: ['', Validators.required],
-        methode: ['extraireAudiosArticle', Validators.required],
-      })
-    }
-
     if (methode === 'extraireMotsclesArticle') {
       return this.formbuild.group({
         noeudpere: ['', Validators.required],
@@ -171,7 +164,7 @@ export class MethodeService {
   listesMehodes() {
 
     let tab = ['extraireAuteurArticle', 'extraireThematiquesParTagsMetas', 'extraireThematiquesArticle',
-      'extraireContenuArticle', 'extraireAudiosArticle', 'extraireVideosArticleGeneral', 'extraireVideosArticle',
+      'extraireContenuArticle', 'extraireVideosArticleGeneral', 'extraireVideosArticle',
       'extrairesImagesArticleGeneral', 'extrairesImagesArticle', 'extraireCommentairesArticle',
       'extraireMotsclesParTagsMetas', 'extraireMotsclesArticle', 'extraireDatePublicationArticle', 'extraireDateMiseJourArticle',
       'extraireValeurAttributNoeud', 'extraireTextHtmlElement']
@@ -191,7 +184,7 @@ export class MethodeService {
     }
   }
   listeattribut() {
-    let tabatt = ['contenuArticle', 'audiosArticle', 'videosArticle', 'imagesArticle', 'auteurArticle',
+    let tabatt = ['contenuArticle', 'videosArticle', 'imagesArticle', 'auteurArticle',
       'thematiqueArticle', 'sousCategorieArticle', 'titreArticle', 'resumeArticle', 'datePublicationArticle',
       'dateMiseJourArticle', 'nombreLikesArticle', 'nombreLecturesArticle', 'nombreCommentairesArticle',
       'nombrePartagesArticle', 'commentairesArticle', 'motsClesArticle']
@@ -199,5 +192,8 @@ export class MethodeService {
       return tabatt;
   }
 
+getattribut(){
+  
+}
 
 }

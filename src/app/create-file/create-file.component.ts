@@ -16,22 +16,25 @@ import Swal from 'sweetalert2';
 export class CreateFileComponent implements OnInit {
 
   form: FormGroup;
-  form2: FormGroup;
-  
+
   tab_files = { mesfichiers: [] }
 
   exist: boolean = false;
-  verif: boolean = false;
 
   listeMethodes = []
   listeAttributs = []
+  fileName;
 
 
   constructor(private formbuild: FormBuilder, private file: FileService, private build: MethodeService, private route: Router, private httpClient: HttpClient) { }
 
   ngOnInit() {
+    this.file.GetJsonFiles().subscribe(res => {
+      this.tab_files = res;
+    },
+      err => { console.log('erreur');}
+    );
     this.initform();
-    this.form2 = this.formbuild.group({ nom: ['', [Validators.required, Validators.minLength(5)]] })
     this.listeAttributs = this.build.listeattribut()
     this.listeMethodes = this.build.listesMehodes()
   }
@@ -50,8 +53,6 @@ export class CreateFileComponent implements OnInit {
       javascript: ['true'],
 
       contenuArticle: this.formbuild.array([]),
-
-      audiosArticle: this.formbuild.array([]),
 
       videosArticle: this.formbuild.array([]),
 
@@ -106,8 +107,13 @@ export class CreateFileComponent implements OnInit {
     const swalWithBootstrapButtons = Swal.mixin({
       buttonsStyling: true
     });
-    
-    this.file.CreerJSonFile(this.form.value, this.form2.get('nom').value).subscribe(res => {
+    for (let i = 0; i < this.tab_files.mesfichiers.length; i++) {
+      if(this.tab_files.mesfichiers[i]===this.file.valider(this.form.get('urldebasesiteweb').value)){
+        this.exist = true
+        return
+      }
+    }
+    this.file.CreerJSonFile(this.form.value, this.file.valider(this.form.get('urldebasesiteweb').value)).subscribe(res => {
       swalWithBootstrapButtons.fire(
         "creé!",
         "Le fichier a été creé.",
@@ -121,25 +127,5 @@ export class CreateFileComponent implements OnInit {
     );
   }
 
-  valider() {
-    this.file.GetJsonFiles().subscribe(res => {
-      this.tab_files = res;
-      if (this.tab_files.mesfichiers.length !== 0) {
-        for (let i = 0; i < this.tab_files.mesfichiers.length; i++) {
-          if (this.tab_files.mesfichiers[i] === this.form2.get('nom').value + '.json') {
-            this.exist = true;
-            return
-          }
-        }
-        this.verif = true;
-      } else {
-        this.verif = true;
-      }
-    },
-      err => { console.log('erreur'); this.verif = true; }
-    );
-  }
-  modifier() {
-    this.verif = false;
-  }
+  
 }

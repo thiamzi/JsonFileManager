@@ -133,7 +133,12 @@
                 </div>
             </div>
             <br>
-            <button id="en" class="btn btn-default" [disabled]="form.invalid" type="submit">enrgistrer</button>
+            <div style="display: inline-block;">
+                <button id="en" [disabled]="form.invalid" class="btn btn-default" type="submit">enrgistrer</button>
+            </div>
+            <div *ngIf="exist" style="display: inline-block;" class="alert alert-primary" role="alert">
+                <p style="color: red;">le nom qui est dans l'url est deja utilise</p>
+            </div>
         </form>
         <br>
     </div>

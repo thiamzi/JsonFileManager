@@ -123,8 +123,8 @@
                             aria-expanded="false">
                             ajouter une methode
                         </button>
-                        <div class="dropdown-menu " id="lis" >
-                            <ul *ngFor="let methode of listeMethodes" >
+                        <div class="dropdown-menu " id="lis">
+                            <ul *ngFor="let methode of listeMethodes">
                                 <li class="dropdown-item" (click)="addmethode(methode , attribut , form)">
                                     {{ methode }}</li>
                             </ul>
@@ -132,28 +132,13 @@
                     </div>
                 </div>
             </div>
-
             <br>
-            <div *ngIf="verif" style="display: inline-block;">
-                <button class="btn btn-default" id="bt" (click)="modifier()">mdifier</button>
+            <div style="display: inline-block;">
+                <button id="en" [disabled]="form.invalid" class="btn btn-default" type="submit">enrgistrer</button>
             </div>
-            <div *ngIf="verif" style="display: inline-block;" class="alert alert-primary" role="alert">
-                <span style="color: green;">nom validé !!</span>
+            <div *ngIf="exist" style="display: inline-block;" class="alert alert-primary" role="alert">
+                <p style="color: red;">le nom qui est dans l'url est deja utilise</p>
             </div>
-            <br>
-            <button *ngIf="verif" id="en"  [disabled]="form.invalid"class="btn btn-default" type="submit">enrgistrer</button>
-            <form *ngIf="!verif" [formGroup]="form2" class="example-form">
-                <div class="form-group">
-                    <h3 id="nom">Donner un nom au fichier</h3>
-                    <label for="i">nom</label>
-                    <input type="nom" class="form-control" formControlName="nom" required>
-                </div>
-                <p *ngIf="exist" style="color: red;">Ce nom est deja utilise</p>
-                <button [disabled]="form2.invalid" class="btn btn-default" id="bt" (click)="valider()">valider
-                    nom</button>
-
-            </form>
         </form>
-        <br>
     </div>
 </div>
