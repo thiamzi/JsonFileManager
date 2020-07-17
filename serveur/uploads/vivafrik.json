@@ -1,0 +1,80 @@
+{
+  "urldebasesiteweb": "https://www.vivafrik.com/",
+  "imagesBaseSite": "",
+  "description": "",
+  "thematiqueSite": "",
+  "sousCategorieSite": "",
+  "contatcSite": "",
+  "dateDernierTourSpider": "",
+  "dateDernierTourCrawler": "",
+  "javascript": "true",
+  "contenuArticle": [
+    {
+      "noeudpere": "div",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "td-post-content",
+      "noeudfils": "",
+      "contenurtxt": "p",
+      "methode": "extraireContenuArticle"
+    }
+  ],
+  "videosArticle": [
+    {
+      "noeudpere": "soan",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "embed-youtube",
+      "noeudfils": "",
+      "attribVideo": "src",
+      "methode": "extraireVideosArticle"
+    }
+  ],
+  "imagesArticle": [
+    {
+      "noeudpere": "div",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "td-post-content",
+      "noeudfils": "figure",
+      "attribImg": "src",
+      "methode": "extrairesImagesArticle"
+    }
+  ],
+  "auteurArticle": [],
+  "textHtmlElement": [],
+  "thematiqueArticle": [
+    {
+      "noeudpere": "lo",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "category",
+      "noeudfils": "a",
+      "methode": "extraireThematiquesArticle"
+    }
+  ],
+  "valeurAttributNoeud": [],
+  "sousCategorieArticle": [],
+  "titreArticle": [],
+  "resumeArticle": [],
+  "datePublicationArticle": [],
+  "dateMiseJourArticle": [],
+  "nombreLikesArticle": [],
+  "nombreLecturesArticle": [],
+  "nombreCommentairesArticle": [],
+  "nombrePartagesArticle": [],
+  "commentairesArticle": [
+    {
+      "noeudpere": "ol",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "comment-list ",
+      "noeudfils": "li",
+      "methode": "extraireCommentairesArticle"
+    }
+  ],
+  "motsClesArticle": [
+    {
+      "noeudpere": "ul",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "td-tags td-post-small-box clearfix",
+      "noeudfils": "li",
+      "methode": "extraireMotsclesArticle"
+    }
+  ]
+}

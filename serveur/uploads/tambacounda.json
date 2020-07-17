@@ -1,0 +1,56 @@
+{
+  "urldebasesiteweb": "https://www.tambacounda.info/",
+  "imagesBaseSite": "",
+  "description": "",
+  "thematiqueSite": "",
+  "sousCategorieSite": "",
+  "contatcSite": "",
+  "dateDernierTourSpider": "",
+  "dateDernierTourCrawler": "",
+  "javascript": "true",
+  "contenuArticle": [
+    {
+      "noeudpere": "section",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "entry-content clearfix",
+      "noeudfils": "",
+      "contenurtxt": "p",
+      "methode": "extraireContenuArticle"
+    }
+  ],
+  "videosArticle": [
+    {
+      "noeudpere": "section",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "entry-content clearfix",
+      "noeudfils": "p",
+      "attribVideo": "src",
+      "methode": "extraireVideosArticle"
+    }
+  ],
+  "imagesArticle": [
+    {
+      "noeudpere": "div",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "orbit-container",
+      "noeudfils": "*",
+      "attribImg": "src",
+      "methode": "extrairesImagesArticle"
+    }
+  ],
+  "auteurArticle": [],
+  "textHtmlElement": [],
+  "thematiqueArticle": [],
+  "valeurAttributNoeud": [],
+  "sousCategorieArticle": [],
+  "titreArticle": [],
+  "resumeArticle": [],
+  "datePublicationArticle": [],
+  "dateMiseJourArticle": [],
+  "nombreLikesArticle": [],
+  "nombreLecturesArticle": [],
+  "nombreCommentairesArticle": [],
+  "nombrePartagesArticle": [],
+  "commentairesArticle": [],
+  "motsClesArticle": []
+}

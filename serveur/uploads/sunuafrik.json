@@ -1,0 +1,37 @@
+{
+  "urldebasesiteweb": "https://www.sunuafrik.com/",
+  "imagesBaseSite": "",
+  "description": "",
+  "thematiqueSite": "",
+  "sousCategorieSite": "",
+  "contatcSite": "",
+  "dateDernierTourSpider": "",
+  "dateDernierTourCrawler": "",
+  "javascript": "true",
+  "contenuArticle": [],
+  "videosArticle": [],
+  "imagesArticle": [],
+  "auteurArticle": [],
+  "textHtmlElement": [],
+  "thematiqueArticle": [],
+  "valeurAttributNoeud": [],
+  "sousCategorieArticle": [],
+  "titreArticle": [],
+  "resumeArticle": [],
+  "datePublicationArticle": [],
+  "dateMiseJourArticle": [],
+  "nombreLikesArticle": [],
+  "nombreLecturesArticle": [],
+  "nombreCommentairesArticle": [],
+  "nombrePartagesArticle": [],
+  "commentairesArticle": [],
+  "motsClesArticle": [
+    {
+      "noeudpere": "ul",
+      "proprietenoeudpere": "id",
+      "valeurproprietenoeudpere": "tags_simple",
+      "noeudfils": "li",
+      "methode": "extraireMotsclesArticle"
+    }
+  ]
+}

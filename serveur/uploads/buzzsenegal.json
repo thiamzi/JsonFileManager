@@ -1,0 +1,55 @@
+{
+  "urldebasesiteweb": "https://www.buzzsenegal.com/",
+  "imagesBaseSite": "",
+  "description": "",
+  "thematiqueSite": "",
+  "sousCategorieSite": "",
+  "contatcSite": "",
+  "dateDernierTourSpider": "",
+  "dateDernierTourCrawler": "",
+  "javascript": "true",
+  "contenuArticle": [
+    {
+      "noeudpere": "div",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "details",
+      "noeudfils": "",
+      "contenurtxt": "p",
+      "methode": "extraireContenuArticle"
+    }
+  ],
+  "videosArticle": [
+    {
+      "noeudpere": "div",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "details",
+      "noeudfils": "",
+      "attribVideo": "src",
+      "methode": "extraireVideosArticle"
+    }
+  ],
+  "imagesArticle": [],
+  "auteurArticle": [],
+  "textHtmlElement": [],
+  "thematiqueArticle": [],
+  "valeurAttributNoeud": [],
+  "sousCategorieArticle": [],
+  "titreArticle": [],
+  "resumeArticle": [],
+  "datePublicationArticle": [],
+  "dateMiseJourArticle": [],
+  "nombreLikesArticle": [],
+  "nombreLecturesArticle": [],
+  "nombreCommentairesArticle": [
+    {
+      "noeudpere": "div",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "comments",
+      "noeudfils": "ul/li",
+      "methode": "extraireCommentairesArticle"
+    }
+  ],
+  "nombrePartagesArticle": [],
+  "commentairesArticle": [],
+  "motsClesArticle": []
+}

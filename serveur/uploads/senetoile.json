@@ -1,0 +1,72 @@
+{
+  "urldebasesiteweb": "https://www.senetoile.net/",
+  "imagesBaseSite": "",
+  "description": "",
+  "thematiqueSite": "",
+  "sousCategorieSite": "",
+  "contatcSite": "",
+  "dateDernierTourSpider": "",
+  "dateDernierTourCrawler": "",
+  "javascript": "true",
+  "contenuArticle": [
+    {
+      "noeudpere": "section",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "article-content",
+      "noeudfils": "",
+      "contenurtxt": "p",
+      "methode": "extraireContenuArticle"
+    }
+  ],
+  "videosArticle": [
+    {
+      "noeudpere": "section",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "video-wrap",
+      "noeudfils": "div",
+      "attribVideo": "src",
+      "methode": "extraireVideosArticle"
+    }
+  ],
+  "imagesArticle": [
+    {
+      "noeudpere": "section/div/a/span",
+      "proprietenoeudpere": "itemprop",
+      "valeurproprietenoeudpere": "image",
+      "noeudfils": "",
+      "attribImg": "src",
+      "methode": "extrairesImagesArticle"
+    }
+  ],
+  "auteurArticle": [],
+  "textHtmlElement": [],
+  "thematiqueArticle": [
+    {
+      "noeudpere": "span",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "category-name cat-red",
+      "noeudfils": "a",
+      "methode": "extraireThematiquesArticle"
+    }
+  ],
+  "valeurAttributNoeud": [],
+  "sousCategorieArticle": [],
+  "titreArticle": [],
+  "resumeArticle": [],
+  "datePublicationArticle": [],
+  "dateMiseJourArticle": [],
+  "nombreLikesArticle": [],
+  "nombreLecturesArticle": [],
+  "nombreCommentairesArticle": [],
+  "nombrePartagesArticle": [],
+  "commentairesArticle": [],
+  "motsClesArticle": [
+    {
+      "noeudpere": "div",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "tags",
+      "noeudfils": "span",
+      "methode": "extraireMotsclesArticle"
+    }
+  ]
+}

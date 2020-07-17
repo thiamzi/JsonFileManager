@@ -1,0 +1,55 @@
+{
+  "urldebasesiteweb": "https://sudfmsenradio.com/",
+  "imagesBaseSite": "",
+  "description": "",
+  "thematiqueSite": "",
+  "sousCategorieSite": "",
+  "contatcSite": "",
+  "dateDernierTourSpider": "",
+  "dateDernierTourCrawler": "",
+  "javascript": "true",
+  "contenuArticle": [
+    {
+      "noeudpere": "div",
+      "proprietenoeudpere": "id",
+      "valeurproprietenoeudpere": "main-content",
+      "noeudfils": "article",
+      "contenurtxt": "p",
+      "methode": "extraireContenuArticle"
+    }
+  ],
+  "videosArticle": [],
+  "imagesArticle": [],
+  "auteurArticle": [
+    {
+      "noeudpere": "div",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "mh-meta entry-meta\"",
+      "noeudfils": "span",
+      "niveau": 1,
+      "methode": "extraireAuteurArticle"
+    }
+  ],
+  "textHtmlElement": [],
+  "thematiqueArticle": [],
+  "valeurAttributNoeud": [],
+  "sousCategorieArticle": [],
+  "titreArticle": [],
+  "resumeArticle": [],
+  "datePublicationArticle": [],
+  "dateMiseJourArticle": [],
+  "nombreLikesArticle": [],
+  "nombreLecturesArticle": [],
+  "nombreCommentairesArticle": [],
+  "nombrePartagesArticle": [],
+  "commentairesArticle": [
+    {
+      "noeudpere": "ol",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "commentlist mh-comment-list",
+      "noeudfils": "li",
+      "methode": "extraireCommentairesArticle"
+    }
+  ],
+  "motsClesArticle": []
+}

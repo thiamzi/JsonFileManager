@@ -1,0 +1,69 @@
+{
+  "urldebasesiteweb": "http://www.walf-groupe.com/",
+  "imagesBaseSite": "",
+  "description": "",
+  "thematiqueSite": "",
+  "sousCategorieSite": "",
+  "contatcSite": "",
+  "dateDernierTourSpider": "",
+  "dateDernierTourCrawler": "",
+  "javascript": "true",
+  "contenuArticle": [
+    {
+      "noeudpere": "div",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "entry-content",
+      "noeudfils": "",
+      "contenurtxt": "p",
+      "methode": "extraireContenuArticle"
+    }
+  ],
+  "videosArticle": [
+    {
+      "attribVideo": "src",
+      "metaparam": "*",
+      "methode": "extraireVideosArticleGeneral"
+    }
+  ],
+  "imagesArticle": [
+    {
+      "noeudpere": "div",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "entry-content",
+      "noeudfils": "p",
+      "attribImg": "src",
+      "methode": "extrairesImagesArticle"
+    }
+  ],
+  "auteurArticle": [],
+  "textHtmlElement": [],
+  "thematiqueArticle": [
+    {
+      "noeudpere": "a",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "category",
+      "noeudfils": "",
+      "methode": "extraireThematiquesArticle"
+    }
+  ],
+  "valeurAttributNoeud": [],
+  "sousCategorieArticle": [],
+  "titreArticle": [],
+  "resumeArticle": [],
+  "datePublicationArticle": [],
+  "dateMiseJourArticle": [],
+  "nombreLikesArticle": [],
+  "nombreLecturesArticle": [],
+  "nombreCommentairesArticle": [],
+  "nombrePartagesArticle": [],
+  "commentairesArticle": [
+    {
+      "noeudpere": "ol",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "comment-list",
+      "noeudfils": "li",
+      "methode": "extraireCommentairesArticle"
+    }
+  ],
+  "motsClesArticle": []
+}

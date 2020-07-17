@@ -1,0 +1,46 @@
+{
+  "urldebasesiteweb": "https://ouestaf.com/",
+  "imagesBaseSite": "",
+  "description": "",
+  "thematiqueSite": "",
+  "sousCategorieSite": "",
+  "contatcSite": "",
+  "dateDernierTourSpider": "",
+  "dateDernierTourCrawler": "",
+  "javascript": "true",
+  "contenuArticle": [
+    {
+      "noeudpere": "div",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "td-post-content",
+      "noeudfils": "",
+      "contenurtxt": "p",
+      "methode": "extraireContenuArticle"
+    }
+  ],
+  "videosArticle": [],
+  "imagesArticle": [],
+  "auteurArticle": [],
+  "textHtmlElement": [],
+  "thematiqueArticle": [
+    {
+      "noeudpere": "li",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "entry-category",
+      "noeudfils": "a",
+      "methode": "extraireThematiquesArticle"
+    }
+  ],
+  "valeurAttributNoeud": [],
+  "sousCategorieArticle": [],
+  "titreArticle": [],
+  "resumeArticle": [],
+  "datePublicationArticle": [],
+  "dateMiseJourArticle": [],
+  "nombreLikesArticle": [],
+  "nombreLecturesArticle": [],
+  "nombreCommentairesArticle": [],
+  "nombrePartagesArticle": [],
+  "commentairesArticle": [],
+  "motsClesArticle": []
+}

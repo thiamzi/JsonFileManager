@@ -1,0 +1,44 @@
+{
+  "urldebasesiteweb": "https://www.dakarmatin.com/",
+  "imagesBaseSite": "",
+  "description": "",
+  "thematiqueSite": "",
+  "sousCategorieSite": "",
+  "contatcSite": "",
+  "dateDernierTourSpider": "",
+  "dateDernierTourCrawler": "",
+  "javascript": "true",
+  "contenuArticle": [
+    {
+      "noeudpere": "span",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "styletextecontenuarticle",
+      "noeudfils": "",
+      "contenurtxt": "p",
+      "methode": "extraireContenuArticle"
+    }
+  ],
+  "videosArticle": [
+    {
+      "attribVideo": "src",
+      "metaparam": "*",
+      "methode": "extraireVideosArticleGeneral"
+    }
+  ],
+  "imagesArticle": [],
+  "auteurArticle": [],
+  "textHtmlElement": [],
+  "thematiqueArticle": [],
+  "valeurAttributNoeud": [],
+  "sousCategorieArticle": [],
+  "titreArticle": [],
+  "resumeArticle": [],
+  "datePublicationArticle": [],
+  "dateMiseJourArticle": [],
+  "nombreLikesArticle": [],
+  "nombreLecturesArticle": [],
+  "nombreCommentairesArticle": [],
+  "nombrePartagesArticle": [],
+  "commentairesArticle": [],
+  "motsClesArticle": []
+}

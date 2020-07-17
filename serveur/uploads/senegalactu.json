@@ -1,0 +1,64 @@
+{
+  "urldebasesiteweb": "https://www.senegalactu.com/",
+  "imagesBaseSite": "",
+  "description": "",
+  "thematiqueSite": "",
+  "sousCategorieSite": "",
+  "contatcSite": "",
+  "dateDernierTourSpider": "",
+  "dateDernierTourCrawler": "",
+  "javascript": "true",
+  "contenuArticle": [
+    {
+      "noeudpere": "div",
+      "proprietenoeudpere": "id",
+      "valeurproprietenoeudpere": "mvp-content-main",
+      "noeudfils": "",
+      "contenurtxt": "p",
+      "methode": "extraireContenuArticle"
+    }
+  ],
+  "videosArticle": [
+    {
+      "noeudpere": "div",
+      "proprietenoeudpere": "id",
+      "valeurproprietenoeudpere": "mvp-video-embed",
+      "noeudfils": "",
+      "attribVideo": "src",
+      "methode": "extraireVideosArticle"
+    }
+  ],
+  "imagesArticle": [
+    {
+      "noeudpere": "div",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "photo shadow top",
+      "noeudfils": "a",
+      "attribImg": "src",
+      "methode": "extrairesImagesArticle"
+    },
+    {
+      "noeudpere": "div",
+      "proprietenoeudpere": "id",
+      "valeurproprietenoeudpere": "mvp-content-main",
+      "noeudfils": "p/a",
+      "attribImg": "src",
+      "methode": "extrairesImagesArticle"
+    }
+  ],
+  "auteurArticle": [],
+  "textHtmlElement": [],
+  "thematiqueArticle": [],
+  "valeurAttributNoeud": [],
+  "sousCategorieArticle": [],
+  "titreArticle": [],
+  "resumeArticle": [],
+  "datePublicationArticle": [],
+  "dateMiseJourArticle": [],
+  "nombreLikesArticle": [],
+  "nombreLecturesArticle": [],
+  "nombreCommentairesArticle": [],
+  "nombrePartagesArticle": [],
+  "commentairesArticle": [],
+  "motsClesArticle": []
+}

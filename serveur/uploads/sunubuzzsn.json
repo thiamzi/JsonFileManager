@@ -1,0 +1,70 @@
+{
+  "urldebasesiteweb": "https://sunubuzzsn.com/",
+  "imagesBaseSite": "",
+  "description": "",
+  "thematiqueSite": "",
+  "sousCategorieSite": "",
+  "contatcSite": "",
+  "dateDernierTourSpider": "",
+  "dateDernierTourCrawler": "",
+  "javascript": "true",
+  "contenuArticle": [],
+  "videosArticle": [
+    {
+      "noeudpere": "div",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "entry-content clearfix single-post-content",
+      "noeudfils": "",
+      "attribVideo": "src",
+      "methode": "extraireVideosArticle"
+    }
+  ],
+  "imagesArticle": [
+    {
+      "noeudpere": "figure",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "wp-block-",
+      "noeudfils": "a",
+      "attribImg": "src",
+      "methode": "extrairesImagesArticle"
+    },
+    {
+      "noeudpere": "div",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "details",
+      "noeudfils": "details",
+      "attribImg": "src",
+      "methode": "extrairesImagesArticle"
+    }
+  ],
+  "auteurArticle": [],
+  "textHtmlElement": [],
+  "thematiqueArticle": [],
+  "valeurAttributNoeud": [],
+  "sousCategorieArticle": [],
+  "titreArticle": [],
+  "resumeArticle": [],
+  "datePublicationArticle": [],
+  "dateMiseJourArticle": [],
+  "nombreLikesArticle": [],
+  "nombreLecturesArticle": [],
+  "nombreCommentairesArticle": [],
+  "nombrePartagesArticle": [],
+  "commentairesArticle": [
+    {
+      "noeudpere": "ol",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "comment-list",
+      "noeudfils": "li",
+      "methode": "extraireCommentairesArticle"
+    },
+    {
+      "noeudpere": "div",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "comment",
+      "noeudfils": "ul/li",
+      "methode": "extraireCommentairesArticle"
+    }
+  ],
+  "motsClesArticle": []
+}

@@ -1,0 +1,65 @@
+{
+  "urldebasesiteweb": "https://www.senemusique.com/",
+  "imagesBaseSite": "",
+  "description": "",
+  "thematiqueSite": "",
+  "sousCategorieSite": "",
+  "contatcSite": "",
+  "dateDernierTourSpider": "",
+  "dateDernierTourCrawler": "",
+  "javascript": "true",
+  "contenuArticle": [],
+  "videosArticle": [
+    {
+      "noeudpere": "div",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "rll-youtube-player",
+      "noeudfils": "",
+      "attribVideo": "src",
+      "methode": "extraireVideosArticle"
+    }
+  ],
+  "imagesArticle": [
+    {
+      "noeudpere": "div",
+      "proprietenoeudpere": "itemprop",
+      "valeurproprietenoeudpere": "articleBody",
+      "noeudfils": "p",
+      "attribImg": "src",
+      "methode": "extrairesImagesArticle"
+    }
+  ],
+  "auteurArticle": [],
+  "textHtmlElement": [],
+  "thematiqueArticle": [],
+  "valeurAttributNoeud": [],
+  "sousCategorieArticle": [],
+  "titreArticle": [],
+  "resumeArticle": [],
+  "datePublicationArticle": [
+    {
+      "noeudpere": "meta",
+      "proprietenoeudpere": "itemprop",
+      "valeurproprietenoeudpere": "datePublished",
+      "niveau": 0,
+      "niveauAttribut": 1,
+      "methode": "extraireDatePublicationArticle"
+    }
+  ],
+  "dateMiseJourArticle": [
+    {
+      "noeudpere": "meta",
+      "proprietenoeudpere": "itemprop",
+      "valeurproprietenoeudpere": "dateModified",
+      "niveau": 0,
+      "niveauAttribut": 1,
+      "methode": "extraireDateMiseJourArticle"
+    }
+  ],
+  "nombreLikesArticle": [],
+  "nombreLecturesArticle": [],
+  "nombreCommentairesArticle": [],
+  "nombrePartagesArticle": [],
+  "commentairesArticle": [],
+  "motsClesArticle": []
+}

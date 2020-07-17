@@ -1,0 +1,101 @@
+{
+  "urldebasesiteweb": "https://senego.com/",
+  "imagesBaseSite": "",
+  "description": "",
+  "thematiqueSite": "",
+  "sousCategorieSite": "",
+  "contatcSite": "",
+  "dateDernierTourSpider": "",
+  "dateDernierTourCrawler": "",
+  "javascript": "true",
+  "contenuArticle": [
+    {
+      "noeudpere": "div",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "entry-content",
+      "noeudfils": "",
+      "contenurtxt": "p",
+      "methode": "extraireContenuArticle"
+    }
+  ],
+  "videosArticle": [
+    {
+      "noeudpere": "div",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "entry-content",
+      "noeudfils": "",
+      "attribVideo": "src",
+      "methode": "extraireVideosArticle"
+    },
+    {
+      "noeudpere": "div",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "entry-content",
+      "noeudfils": "p",
+      "attribVideo": "data-src",
+      "methode": "extraireVideosArticle"
+    },
+    {
+      "attribVideo": "src",
+      "metaparam": "*",
+      "methode": "extraireVideosArticleGeneral"
+    }
+  ],
+  "imagesArticle": [
+    {
+      "noeudpere": "div",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "entry-content",
+      "noeudfils": "p",
+      "attribImg": "data-src",
+      "methode": "extrairesImagesArticle"
+    },
+    {
+      "noeudpere": "div",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "entry-content",
+      "noeudfils": "p",
+      "attribImg": "data-lazy-src",
+      "methode": "extrairesImagesArticle"
+    },
+    {
+      "noeudpere": "div",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "entry-content",
+      "noeudfils": "p",
+      "attribImg": "src",
+      "methode": "extrairesImagesArticle"
+    }
+  ],
+  "auteurArticle": [],
+  "textHtmlElement": [],
+  "thematiqueArticle": [],
+  "valeurAttributNoeud": [],
+  "sousCategorieArticle": [],
+  "titreArticle": [],
+  "resumeArticle": [],
+  "datePublicationArticle": [],
+  "dateMiseJourArticle": [],
+  "nombreLikesArticle": [],
+  "nombreLecturesArticle": [],
+  "nombreCommentairesArticle": [],
+  "nombrePartagesArticle": [],
+  "commentairesArticle": [
+    {
+      "noeudpere": "div",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "comment_list",
+      "noeudfils": "*",
+      "methode": "extraireCommentairesArticle"
+    }
+  ],
+  "motsClesArticle": [
+    {
+      "noeudpere": "a",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "tags-post",
+      "noeudfils": "",
+      "methode": "extraireMotsclesArticle"
+    }
+  ]
+}

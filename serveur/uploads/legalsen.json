@@ -1,0 +1,70 @@
+{
+  "urldebasesiteweb": "https://legalsen.com/",
+  "imagesBaseSite": "",
+  "description": "",
+  "thematiqueSite": "",
+  "sousCategorieSite": "",
+  "contatcSite": "",
+  "dateDernierTourSpider": "",
+  "dateDernierTourCrawler": "",
+  "javascript": "true",
+  "contenuArticle": [
+    {
+      "noeudpere": "div",
+      "proprietenoeudpere": "itemprop",
+      "valeurproprietenoeudpere": "articleBody",
+      "noeudfils": "",
+      "contenurtxt": "p",
+      "methode": "extraireContenuArticle"
+    }
+  ],
+  "videosArticle": [
+    {
+      "attribVideo": "src",
+      "metaparam": "*",
+      "methode": "extraireVideosArticleGeneral"
+    }
+  ],
+  "imagesArticle": [
+    {
+      "noeudpere": "div",
+      "proprietenoeudpere": "itemprop",
+      "valeurproprietenoeudpere": "articleBody",
+      "noeudfils": "p",
+      "attribImg": "src",
+      "methode": "extrairesImagesArticle"
+    },
+    {
+      "noeudpere": "div",
+      "proprietenoeudpere": "itemprop",
+      "valeurproprietenoeudpere": "articleBody",
+      "noeudfils": "p",
+      "attribImg": "data-lazy-src",
+      "methode": "extrairesImagesArticle"
+    }
+  ],
+  "auteurArticle": [
+    {
+      "noeudpere": "span",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "author-name",
+      "noeudfils": "span",
+      "niveau": 0,
+      "methode": "extraireAuteurArticle"
+    }
+  ],
+  "textHtmlElement": [],
+  "thematiqueArticle": [],
+  "valeurAttributNoeud": [],
+  "sousCategorieArticle": [],
+  "titreArticle": [],
+  "resumeArticle": [],
+  "datePublicationArticle": [],
+  "dateMiseJourArticle": [],
+  "nombreLikesArticle": [],
+  "nombreLecturesArticle": [],
+  "nombreCommentairesArticle": [],
+  "nombrePartagesArticle": [],
+  "commentairesArticle": [],
+  "motsClesArticle": []
+}

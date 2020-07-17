@@ -1,0 +1,55 @@
+{
+  "urldebasesiteweb": "https://www.kaolackinfos.com/",
+  "imagesBaseSite": "",
+  "description": "",
+  "thematiqueSite": "",
+  "sousCategorieSite": "",
+  "contatcSite": "",
+  "dateDernierTourSpider": "",
+  "dateDernierTourCrawler": "",
+  "javascript": "true",
+  "contenuArticle": [
+    {
+      "noeudpere": "div",
+      "proprietenoeudpere": "propety",
+      "valeurproprietenoeudpere": "content:encoded",
+      "noeudfils": "",
+      "contenurtxt": "p",
+      "methode": "extraireContenuArticle"
+    }
+  ],
+  "videosArticle": [],
+  "imagesArticle": [],
+  "auteurArticle": [
+    {
+      "noeudpere": "div",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "field field-name-field-auteur field-type-text field-label-inline clearfix",
+      "noeudfils": "div",
+      "niveau": 1,
+      "methode": "extraireAuteurArticle"
+    }
+  ],
+  "textHtmlElement": [],
+  "thematiqueArticle": [],
+  "valeurAttributNoeud": [],
+  "sousCategorieArticle": [],
+  "titreArticle": [],
+  "resumeArticle": [],
+  "datePublicationArticle": [],
+  "dateMiseJourArticle": [],
+  "nombreLikesArticle": [],
+  "nombreLecturesArticle": [],
+  "nombreCommentairesArticle": [],
+  "nombrePartagesArticle": [],
+  "commentairesArticle": [],
+  "motsClesArticle": [
+    {
+      "noeudpere": "div",
+      "proprietenoeudpere": "rel",
+      "valeurproprietenoeudpere": "dc:subject",
+      "noeudfils": "a",
+      "methode": "extraireMotsclesArticle"
+    }
+  ]
+}

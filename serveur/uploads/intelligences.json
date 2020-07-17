@@ -1,15 +1,24 @@
 {
-  "urldebasesiteweb": "https://visualisation.com/data_viz.html",
-  "imagesBaseSite": "SVDWkkkk",
-  "description": "c'est lui qui tout ce qui materiel dans l'hopital",
-  "thematiqueSite": " xxw",
-  "sousCategorieSite": "gvc",
-  "contatcSite": "dfgdfcd",
-  "dateDernierTourSpider": "2020-04-17",
-  "dateDernierTourCrawler": "2020-04-12",
+  "urldebasesiteweb": "https://intelligences.info/",
+  "imagesBaseSite": "",
+  "description": "",
+  "thematiqueSite": "",
+  "sousCategorieSite": "",
+  "contatcSite": "",
+  "dateDernierTourSpider": "",
+  "dateDernierTourCrawler": "",
   "javascript": "true",
   "contenuArticle": [],
-  "videosArticle": [],
+  "videosArticle": [
+    {
+      "noeudpere": "div",
+      "proprietenoeudpere": "class",
+      "valeurproprietenoeudpere": "blog-content",
+      "noeudfils": "div/p",
+      "attribVideo": "src",
+      "methode": "extraireVideosArticle"
+    }
+  ],
   "imagesArticle": [],
   "auteurArticle": [],
   "textHtmlElement": [],

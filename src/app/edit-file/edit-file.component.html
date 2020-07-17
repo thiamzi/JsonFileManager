@@ -4,8 +4,7 @@
         <form [formGroup]="form" (ngSubmit)="submit()">
             <div class="form-group">
                 <label for="urldebasesiteweb">Url de base site web</label>
-                <input type="text" id="urldebasesiteweb" class="form-control" formControlName="urldebasesiteweb"
-                    required>
+                <input type="text" id="urldebasesiteweb" class="form-control" formControlName="urldebasesiteweb" required>
             </div>
             <div class="form-group">
                 <label for="imagesBaseSite">Image de base site</label>
@@ -21,8 +20,7 @@
             </div>
             <div class="form-group">
                 <label for="sousCategorieSite">Sous categorie site</label>
-                <input type="text" id="sousCategorieSite" class="form-control" formControlName="sousCategorieSite"
-                    required>
+                <input type="text" id="sousCategorieSite" class="form-control" formControlName="sousCategorieSite" required>
             </div>
             <div class="form-group">
                 <label for="contatcSite">Contact site</label>
@@ -30,25 +28,21 @@
             </div>
             <div class="form-group">
                 <label for="dateDernierTourSpider">DateDernierTourSpider</label>
-                <input type="date" id="dateDernierTourSpider" class="form-control"
-                    formControlName="dateDernierTourSpider" required>
+                <input type="date" id="dateDernierTourSpider" class="form-control" formControlName="dateDernierTourSpider" required>
             </div>
             <div class="form-group">
                 <label for="dateDernierTourCrawler">DateDernierTourCrawler</label>
-                <input type="date" id="dateDernierTourCrawler" class="form-control"
-                    formControlName="dateDernierTourCrawler" required>
+                <input type="date" id="dateDernierTourCrawler" class="form-control" formControlName="dateDernierTourCrawler" required>
             </div>
             <div class="form-group">
                 <label for="javascript">Javascript</label><br>
                 <div class="custom-control custom-radio">
-                    <input id="true" type="radio" class="custom-control-input" value="true"
-                        formControlName="javascript">
+                    <input id="true" type="radio" class="custom-control-input" value="true" formControlName="javascript">
                     <label class="custom-control-label" for="true">True</label>
                 </div>
 
                 <div class="custom-control custom-radio">
-                    <input id="false" type="radio" class="custom-control-input" value="false"
-                        formControlName="javascript">
+                    <input id="false" type="radio" class="custom-control-input" value="false" formControlName="javascript">
                     <label class="custom-control-label" for="false">False</label>
                 </div>
             </div>
@@ -57,28 +51,23 @@
                 <div [formArrayName]="attribut">
                     <h3>{{ attribut }}</h3>
                     <div *ngFor="let att of getform(attribut).controls; let i = index">
-                        <h4>Element {{ i + 1}} <span (click)="delMethode(i , getform(attribut))"
-                                class="glyphicon glyphicon-remove-sign"></span></h4>
+                        <h4>Element {{ i + 1}} <span (click)="delMethode(i , getform(attribut))" class="glyphicon glyphicon-remove-sign"></span></h4>
                         <div [formGroupName]="i">
                             <div class="form-group" *ngIf="att.get('noeudpere')">
                                 <label for="noeudpere">Noeud pere</label>
-                                <input type="text" id="noeudpere" class="form-control" formControlName="noeudpere"
-                                    required>
+                                <input type="text" id="noeudpere" class="form-control" formControlName="noeudpere" required>
                             </div>
                             <div class="form-group" *ngIf="att.get('proprietenoeudpere')">
                                 <label for="proprietenoeudpere">Propriete noeud pere</label>
-                                <input type="text" id="proprietenoeudpere" class="form-control"
-                                    formControlName="proprietenoeudpere" required>
+                                <input type="text" id="proprietenoeudpere" class="form-control" formControlName="proprietenoeudpere" required>
                             </div>
                             <div class="form-group" *ngIf="att.get('valeurproprietenoeudpere')">
                                 <label for="valeurproprietenoeudpere">Valeur propriete noeud pere</label>
-                                <input type="text" id="valeurproprietenoeudpere" class="form-control"
-                                    formControlName="valeurproprietenoeudpere" required>
+                                <input type="text" id="valeurproprietenoeudpere" class="form-control" formControlName="valeurproprietenoeudpere" required>
                             </div>
                             <div class="form-group" *ngIf="att.get('noeudfils')">
                                 <label for="noeudfils">Noeud fils</label>
-                                <input type="text" id="noeudfils" class="form-control" formControlName="noeudfils"
-                                    required>
+                                <input type="text" id="noeudfils" class="form-control" formControlName="noeudfils" required>
                             </div>
                             <div class="form-group" *ngIf="att.get('niveau')">
                                 <label for="niveau">Niveau</label>
@@ -86,45 +75,37 @@
                             </div>
                             <div class="form-group" *ngIf="att.get('niveauAttribut')">
                                 <label for="niveauAttribut">Niveau attribut</label>
-                                <input type="date" id="niveauAttribut" class="form-control"
-                                    formControlName="niveauAttribut" required>
+                                <input type="number" id="niveauAttribut" class="form-control" formControlName="niveauAttribut" required>
                             </div>
                             <div class="form-group" *ngIf="att.get('tagProperty')">
                                 <label for="tagProperty">Tag property</label>
-                                <input type="text" id="tagProperty" class="form-control" formControlName="tagProperty"
-                                    required>
+                                <input type="text" id="tagProperty" class="form-control" formControlName="tagProperty" required>
                             </div>
                             <div class="form-group" *ngIf="att.get('contenurtxt')">
                                 <label for="contenurtxt">Contenu txt</label>
-                                <input type="text" id="contenurtxt" class="form-control" formControlName="contenurtxt"
-                                    required>
+                                <input type="text" id="contenurtxt" class="form-control" formControlName="contenurtxt" required>
                             </div>
                             <div class="form-group" *ngIf="att.get('attribVideo')">
                                 <label for="attribVideo">Attribut video</label>
-                                <input type="text" id="attribVideo" class="form-control" formControlName="attribVideo"
-                                    required>
+                                <input type="text" id="attribVideo" class="form-control" formControlName="attribVideo" required>
                             </div>
                             <div class="form-group" *ngIf="att.get('attribImg')">
                                 <label for="attribImg">Attribut image</label>
-                                <input type="text" id="attribImg" class="form-control" formControlName="attribImg"
-                                    required>
+                                <input type="text" id="attribImg" class="form-control" formControlName="attribImg" required>
                             </div>
                             <div class="form-group" *ngIf="att.get('metaparam')">
                                 <label for="metaparam">Meta Param</label>
-                                <input type="text" id="attribVideo" class="form-control" formControlName="metaparam"
-                                    required>
+                                <input type="text" id="attribVideo" class="form-control" formControlName="metaparam" required>
                             </div>
 
                         </div>
                     </div>
                     <div class="btn-group">
-                        <button type="button" [disabled]="!getform(attribut).valid"
-                            class="btn btn-primaryy dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
+                        <button type="button" class="btn btn-primaryy dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             ajouter une methode
                         </button>
                         <div class="dropdown-menu" id="lis">
-                            <ul *ngFor="let methode of listeMethodes" >
+                            <ul *ngFor="let methode of listeMethodes">
                                 <li class="dropdown-item" (click)="addmethode(methode , attribut , form)">
                                     {{ methode }}</li>
                             </ul>
@@ -134,7 +115,7 @@
             </div>
             <br>
             <div style="display: inline-block;">
-                <button id="en" [disabled]="form.invalid" class="btn btn-default" type="submit">enrgistrer</button>
+                <button id="en" class="btn btn-default" type="submit">enrgistrer</button>
             </div>
             <div *ngIf="exist" style="display: inline-block;" class="alert alert-primary" role="alert">
                 <p style="color: red;">le nom qui est dans l'url est deja utilise</p>

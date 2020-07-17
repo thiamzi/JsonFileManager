@@ -142,8 +142,7 @@ export class MethodeService {
         noeudpere: ['', Validators.required],
         proprietenoeudpere: ['', Validators.required],
         valeurproprietenoeudpere: ['', Validators.required],
-        noeudfils: ['', Validators.required],
-        niveauNoeud: ['', Validators.required],
+        niveau: ['', Validators.required],
         niveauAttribut: ['', Validators.required],
         methode: ['extraireDateMiseJourArticle', Validators.required],
       })
@@ -154,8 +153,7 @@ export class MethodeService {
         noeudpere: ['', Validators.required],
         proprietenoeudpere: ['', Validators.required],
         valeurproprietenoeudpere: ['', Validators.required],
-        noeudfils: ['', Validators.required],
-        niveauNoeud: ['', Validators.required],
+        niveau: ['', Validators.required],
         niveauAttribut: ['', Validators.required],
         methode: ['extraireDatePublicationArticle', Validators.required],
       })
